@@ -10,6 +10,14 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+mix.ts([
+   'resources/ts/vendor.ts',
+   'resources/ts/polyfills.ts',
+], 'public/js/vendor.js');
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.ts([
+   'resources/ts/main.ts'
+], 'public/js/app.js').version();
+
+mix.sass('resources/sass/app.scss', 'public/css');
+   
