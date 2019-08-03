@@ -32,9 +32,13 @@ class BlockController extends Controller
         $filename = 'no_image.png';
       $logo = $this->block->select('content')->where('block','=','logo')->first();
      if(!empty($logo))  {  $filename = $logo['content']; } 
-\Log::info($filename);
+ 
         return view('admin.blocks.standard.logo',['filename' => $filename]);
     } 
+
+
+
+
 
      public function logo_store(Request $request)
     {

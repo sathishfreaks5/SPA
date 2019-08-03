@@ -31,16 +31,22 @@ Route::group(['middleware' => 'auth','prefix' => 'admin/blocks'], function () {
 	Route::post('logo-management-store', 'BlockController@logo_store')->name('admin.blocks.standard.logo.store');
 	
 
-	Route::get('banner-management', ['as' => 'admin.blocks.standard.banner', 
-		'uses' => 'BlockController@banner']);  
+	Route::resources([
+    	'banner-management' 	=> 'BannerController',
+    	'promotion-management' 	=> 'PromotionController'
+	]);
+
+	//Route::get('banner-management', ['as' => 'admin.blocks.standard.banner',  'uses' => 'BlockController@banner']);  
+	//Route::resource('banner-management','BannerController');
+	//Route::resource('promotion-management', 'PromotionController');
 });
 
 /**
 * Admin-Activity-Management
 */ 
 Route::group(['middleware' => 'auth','prefix' => 'admin/activity'], function () {
-	Route::get('promotion-management', ['as' => 'admin.blocks.activity.promotion', 
-		'uses' => 'ActivityController@promotion']);
+	/*Route::get('promotion-management', ['as' => 'admin.blocks.activity.promotion', 
+		'uses' => 'ActivityController@promotion']);*/
 	Route::get('content-management', ['as' => 'admin.blocks.activity.content', 
 		'uses' => 'ActivityController@content']);
 	Route::get('clientele-management', ['as' => 'admin.blocks.activity.clientele', 

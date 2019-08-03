@@ -61,3 +61,19 @@
   max-width: 530px;
   margin: 0 auto;
 }
+
+/******************************** CUSTOM *******************/
+body { color: #EEE; }
+.sidebar, .off-canvas-sidebar{
+  background: #222;
+}
+
+.sidebar .nav li>a, .off-canvas-sidebar .nav li>a,  .off-canvas-sidebar .nav li>p{
+  font-size: 0.79995rem;
+}
+
+.main-panel { 
+    border-top: 2px solid #FFF;
+    background: linear-gradient(#000, #666); 
+}
+

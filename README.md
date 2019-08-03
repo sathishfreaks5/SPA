@@ -1,28 +1,42 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+![maguttiCms](http://www.magutti.com/public/website/images/logo_colore.png)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Project
+## About maguttiCms
+Open source multilingual Laravel 5.8 CMS with simple shopping cart.
 
-This is single page web application with dynamic features. 
+## Version
+5.8 - Bootstrap 4
 
-- Admin Panel
-- Fastest Vue Js Front-End
-- Fully Utilized Laravel 5.8.16 features.
-- Simple, fast routing engine.
-- Powerful dependency injection container.
-- Multiple back-ends for session and cache storage.
-- Expressive, intuitive database ORM.
-- Database agnostic schema migrations.
-- Robust background job processing.
+maguttiCms is released using Laravel 5.8.XX
+preset Bootstrap 4
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### How to Install
+ 
+ - copy files in your local directory
+ - rename env.example to .env file and set your db connection data
+ - run composer install
+ - run php artisan key:generate
+ - create db tables importing framework_base.sql file located under the db folder
+ - to login in the admin panel (http://yourpath/admin)
+   - email: cmsadmin@magutti.com
+   - password: password
+   
+### Server Requirements
+- PHP >= 7.1.3
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+ 
   
-## License
+License
+=======
+Code released under the MIT license
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Security Vulnerabilities
+=======
+If you discover a security vulnerability within maguttiCms, please send an e-mail to  at hello@magutti.com. All security vulnerabilities will be promptly addressed.
+

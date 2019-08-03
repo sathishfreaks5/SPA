@@ -56,7 +56,7 @@
                         </li>
 
                          <li @if ($pageSlug == 'Banner Management') class="active " @endif>
-                            <a href="{{ route('admin.blocks.standard.banner') }}">
+                            <a href="{{ route('banner-management.index') }}">
                                 <i class="tim-icons icon-chart-pie-36"></i>
                                 <p>{{ _('Banner Management') }}</p>
                             </a>
@@ -80,7 +80,7 @@
                        
 
                         <li @if ($pageSlug == 'Promotion Management') class="active " @endif>
-                            <a href="{{ route('admin.blocks.activity.promotion') }}">
+                            <a href="{{ route('promotion-management.index') }}">
                                 <i class="tim-icons icon-chart-pie-36"></i>
                                 <p>{{ _('Promotion Management') }}</p>
                             </a>
